@@ -6,6 +6,7 @@ extern "C" {
 #endif
 
 #include <stddef.h>
+#include <stdint.h>
 
 
 typedef struct data
@@ -24,8 +25,10 @@ int data_copy(data * dest, const data * src);
 void data_move_content(data * d, void ** content, size_t size);
 void data_move(data * dest, data * src);
 void data_swap(data * d0, data * d1);
-int data_join(const data * first, const data * second, data * out);
 int data_string(data * d, const char * string);
+size_t data_count(const data * d, const uint8_t separator);
+int data_join(const data * first, const data * second, data * out);
+int data_split(const data * d, const uint8_t separator, data * first, data * second);
 
 
 #ifdef __cplusplus

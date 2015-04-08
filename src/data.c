@@ -102,13 +102,13 @@ int data_string(data * d, const char * string)
 	return 0;
 }
 
-size_t data_count(const data * d, const uint8_t separator)
+size_t data_count(const data * d, const uint8_t element)
 {
 	size_t count = 0;
 
 	for (size_t i = 0; i < d->size; i++)
 	{
-		if(((uint8_t *)d->content)[i] == separator)
+		if(((uint8_t *)d->content)[i] == element)
 			count++;
 	}
 

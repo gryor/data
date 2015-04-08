@@ -18,7 +18,12 @@ typedef struct data
 ## Return value
 
 Each function returning an `int` returns 0 on success.
-This makes it possible to write code like: `if(data_create(&d, 12)) die("Could not create a data structure.");`
+This makes it possible to write code like:
+
+```c
+if(data_create(&d, 12))
+    die("Could not create a data structure.");
+```
 
 ## Functions
 

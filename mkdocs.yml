@@ -1,1 +1,3 @@
-site_name: My Docs
+site_name: Data
+repo_url: https://github.com/wilhelmmatilainen/data
+site_description: Data is a C library providing a generic data container.

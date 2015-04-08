@@ -11,14 +11,14 @@ void die(const char * error)
 
 int main(int argc, char * argv[])
 {
-	data d;
+	data_t data;
 
-	if(data_string(&d, "Hello World!"))
+	if(data_string(&data, "Hello World!"))
 		die("Could not create a data from a string");
 
-	printf("Test data\nData: %*s\n", d.size, d.content);
+	printf("Test data\nData: %*s\n", data.size, data.content);
 
-	data_destroy(&d);
+	data_destroy(&data);
 
 	return 0;
 }

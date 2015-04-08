@@ -4,4 +4,4 @@
 # Data
 A C library for a generic data container.
 
-[Read the Docs!](https://data.readthedocs.org/)
+[Read the Docs!](https://data.readthedocs.org/en/latest/)
